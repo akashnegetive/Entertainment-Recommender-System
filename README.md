@@ -1,6 +1,6 @@
 # Project: Movie Recommender System Using Machine Learning!
 
-<img src="demo/4.png" alt="workflow" width="70%">
+<img src="demo/4.png" alt="workflow" width="60%">
 
 Recommendation systems are becoming increasingly important in today’s extremely busy world. People are always short on time with the myriad tasks they need to accomplish in the limited 24 hours. Therefore, the recommendation systems are important as they help them make the right choices, without having to expend their cognitive resources.
 
@@ -63,17 +63,26 @@ The dataset used for this project contains information about movies, including t
 
 The model for recommending movies is based on cosine similarity. Cosine similarity is used to measure the similarity between movie titles. The model computes the similarity scores and suggests the top 10 similar movies based on the selected movie title.
 
-## Results
 
-The system provides the top 10 recommended movies for any selected movie title. It also fetches and displays the posters of these recommended movies using the TMDB API.
+# Difference Between Euclidean Distance and Cosine Similarity
 
-# Demo:
+<img width="400" height="215" alt="image" src="https://github.com/user-attachments/assets/09e2f6ad-7a26-4e8b-9c71-03353d404caa" />
 
-<img src="demo/1.png" alt="workflow" width="70%">
+-Euclidean: Best for numeric, dense, or continuous data
+                    (e.g., user ratings, spatial coordinates).
+-Cosine: Best for textual, sparse, or high-dimensional data
+              (e.g., NLP vectors, TF-IDF, CountVectorizer).
 
-<img src="demo/2.png" alt="workflow" width="70%">
+-Euclidean: Ranges from 0 → ∞ (distance).
+-Cosine: Ranges from –1 → +1
 
-<img src="demo/3.png" alt="workflow" width="70%">
+<img width="400" height="111" alt="image" src="https://github.com/user-attachments/assets/f18ed1e0-f7ab-4db3-9301-e8f0aad41cf5" />
+
+
+# Compare Cosine Vs Euclidean 
+
+<img width="400" height="742" alt="image" src="https://github.com/user-attachments/assets/c4d6c303-c604-462d-9f91-72181370ad49" />
+
 
 # Concept used to build the model.pkl file : cosine_similarity
 
@@ -86,4 +95,18 @@ The system provides the top 10 recommended movies for any selected movie title. 
 4 . It will be a value between [0,1]. If it is 0 then both vectors are complete different. But in the place of that if it is 1, It will be completely similar.
 
 5 . For more details , check URL : https://www.learndatasci.com/glossary/cosine-similarity/
+
+## Results
+
+The system provides the top 10 recommended movies for any selected movie title. It also fetches and displays the posters of these recommended movies using the TMDB API.
+
+# Demo:
+
+<img src="demo/1.png" alt="workflow" width="70%">
+
+<img src="demo/2.png" alt="workflow" width="70%">
+
+<img src="demo/3.png" alt="workflow" width="70%">
+
+# Thanks Watching !!
 
