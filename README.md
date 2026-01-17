@@ -96,9 +96,20 @@ The model for recommending movies is based on cosine similarity. Cosine similari
 
 5 . For more details , check URL : https://www.learndatasci.com/glossary/cosine-similarity/
 
-## Results
+## Results | STREAMLIT UI
 
-The system provides the top 10 recommended movies for any selected movie title. It also fetches and displays the posters of these recommended movies using the TMDB API.
+1.Loads pre-processed data (movies.pkl and similarity.pkl) using pickle
+
+2.Takes user movie input through a Streamlit dropdown and standardizes it (lowercase + strip) for accurate matching.
+
+3.Finds the selected movie index and retrieves similarity scores from the cosine-similarity matrix.
+
+4.Sorts similarity values and selects the top 5 most similar movies based on text-feature vectors.
+
+5.Fetches posters from TMDB API using a safe retry-enabled request system and fills missing posters with placeholders.
+
+6.Displays movie names and posters in a clean 5-column layout using Streamlit UI components
+
 
 ## Website Link   [🔗](https://movie-recommender-system-akash.streamlit.app/)
 
